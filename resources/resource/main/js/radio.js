@@ -12,10 +12,6 @@ const elements = [
     url: "http://live.radyotvonline.com:9030/;",
   },
   {
-    title: "AÇIK RADYO",
-    url: "https://stream.34bit.net/ar.opus",
-  },
-  {
     title: "ADA FM Sakarya",
     url: "http://adafm.net:6262/;",
   },
