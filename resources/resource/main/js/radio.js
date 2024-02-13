@@ -442,6 +442,7 @@ elements.map((element, index) => {
 
 radio.addEventListener('click', async (e) => {
   if (!e.target.classList.contains("card")) return;
+  console.log(e.target.getAttribute('data-src'));
   player.setAttribute('src', e.target.getAttribute('data-src'));
   radio.querySelectorAll('.card').forEach((card) => card.classList.remove('active'));
   e.target.classList.add('active');
