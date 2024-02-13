@@ -442,18 +442,8 @@ elements.map((element, index) => {
 
 radio.addEventListener('click', async (e) => {
   if (!e.target.classList.contains("card")) return;
-
-  // Yeni ses dosyasının yüklenmesi bekleniyor
-  await new Promise((resolve, reject) => {
-    player.setAttribute('src', e.target.getAttribute('data-src'));
-    player.oncanplay = resolve; // Ses dosyası yüklendiğinde resolve olacak
-    player.onerror = reject;    // Hata durumunda reject olacak
-  });
-
-  // Ses dosyası yüklendikten sonra otomatik olarak çalmaya başla
-  player.play();
-
-  // Diğer işlemleri devam ettir
+  player.setAttribute('src', e.target.getAttribute('data-src'));
   radio.querySelectorAll('.card').forEach((card) => card.classList.remove('active'));
   e.target.classList.add('active');
+  player.play();
 });
