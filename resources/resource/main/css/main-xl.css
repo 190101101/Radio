@@ -1,0 +1,35 @@
+@media screen and (min-width: 1280px) {
+    .wrap {
+        display: flex;
+    }
+
+    .section {
+        width: 74%;
+    }
+
+    .marpad {
+        margin: 0px 30px 60px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .marpad {
+        margin: 0px 0px 60px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .toggle-btn {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logonone {
+        display: none !important;
+    }
+}
