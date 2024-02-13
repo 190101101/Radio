@@ -1,99 +1,138 @@
-<!doctype html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="icon" href="resources/files/system/svg/react.svg" type="image/png" sizes="20x20">
-        <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
-        <link rel="stylesheet" href="resources/resource/main/css/main.css">
-        <link rel="stylesheet" href="resources/resource/main/css/main-md.css">
-        <link rel="stylesheet" href="resources/resource/main/css/main-xl.css">
-        <link rel="stylesheet" href="resources/resource/main/css/bootstrap.min.css">
-        <script src="resources/resource/main/js/jquery-3.5.1.min.js"></script>
-        <title>Java Script Radio</title>
-    </head>
-    <body class="body">
-        <div id="wrapper">
-            <!-- navigation -->
-            <nav class="navbar fixed-bottom navbar-expand-md navbar-bg-dark navbar-dark">
-              <a class="navbar-brand toggle-btn front-navbrand">
-                <img src="resources/files/system/image/logo.jpg" class="nav-logo" id="logo">
-            </a> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="icon"
+      href="resources/files/system/svg/react.svg"
+      type="image/png"
+      sizes="20x20"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.metroui.org.ua/current/metro.css"
+    />
+    <link rel="stylesheet" href="resources/resource/main/css/main.css" />
+    <link rel="stylesheet" href="resources/resource/main/css/main-md.css" />
+    <link rel="stylesheet" href="resources/resource/main/css/main-xl.css" />
+    <link
+      rel="stylesheet"
+      href="resources/resource/main/css/bootstrap.min.css"
+    />
+    <script src="resources/resource/main/js/jquery-3.5.1.min.js"></script>
+    <title>Java Script Radio</title>
+  </head>
+  <body class="body">
+    <div id="wrapper">
+      <!-- navigation -->
+      <nav
+        class="navbar fixed-bottom navbar-expand-md navbar-bg-dark navbar-dark"
+      >
+        <a class="navbar-brand toggle-btn front-navbrand">
+          <img
+            src="resources/files/system/image/logo.jpg"
+            class="nav-logo"
+            id="logo"
+          />
+        </a>
 
-            <a class="navbar-brand front-navbrand logonone logoshow">
-                <img src="resources/files/system/image/wlogo.jpg" class="nav-logo" id="logo">
-            </a> 
+        <a class="navbar-brand front-navbrand logonone logoshow">
+          <img
+            src="resources/files/system/image/wlogo.jpg"
+            class="nav-logo"
+            id="logo"
+          />
+        </a>
 
-            <div class="site-head">
-                <span>190101101</span>  
-            </div>
-    </nav>
+        <div class="site-head">
+          <span>190101101</span>
+        </div>
+        <ul class="ml-auto">
+          <div class="spinner-status spinner-border text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </ul>
+      </nav>
 
-    <!-- navigation -->
-    <div class="wrap">
+      <!-- navigation -->
+      <div class="wrap">
         <div class="content">
-            <div class="inner-content marpad page-content inner-not-vh">
-                <!-- content -->
-                <div class="page-container">
-                    <div class="container-title-box">
-                        <span>Radio</span>
-                        <hr class="page-hr">
-                    </div>
-                    <!-- block -->
-                    <div class="row mb-3">
-                        <audio id="player" src=""  controls data-role="audio-player"
-                               data-src="https://metroui.org.ua/res/hotel_california.mp3"
-                               data-show-loop="false"
-                               data-show-stop="false"
-                               data-show-volume="false"
-                               data-show-info="false">
-                        </audio>
-                    </div>
+          <div class="inner-content marpad page-content inner-not-vh">
+            <!-- content -->
+            <div class="page-container">
+              <div class="container-title-box">
+                <span>Radio</span>
+                <hr class="page-hr" />
+              </div>
+              <!-- block -->
+              <div class="row mb-3">
+                <audio
+                  id="player"
+                  src=""
+                  controls
+                  data-role="audio-player"
+                  data-src="https://metroui.org.ua/res/hotel_california.mp3"
+                  data-show-loop="false"
+                  data-show-stop="false"
+                  data-show-volume="false"
+                  data-show-info="false"
+                ></audio>
+              </div>
 
-                    <div id="radio" class="row"></div>
-                    <!-- block -->
-                </div>
-                <!-- content -->
+              <div id="radio" class="row"></div>
+              <!-- block -->
             </div>
+            <!-- content -->
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- footer -->
-<footer class="footer">
-    <div class="footer-upper">
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-upper">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="inner-footer-col-up">
-                        <div class="footer-brand">
-                            <div class="footer-brand-left">
-                                <img src="resources/files/system/svg/react.svg" class="footer-brand-logo">
-                            </div>
-                            <div class="footer-brand-right">
-                                <span>190101101</span>
-                                <span>Radio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inner-footer-col-up-under">
-                        <span class="footer-down-txt">Radio</span> 
-                    </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="inner-footer-col-up">
+                <div class="footer-brand">
+                  <div class="footer-brand-left">
+                    <img
+                      src="resources/files/system/svg/react.svg"
+                      class="footer-brand-logo"
+                    />
+                  </div>
+                  <div class="footer-brand-right">
+                    <span>190101101</span>
+                    <span>Radio</span>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="resources/files/system/gif/cote.gif" class="cote1" title="meow :) hello i am Cookie meow">
-                </div>  
+              </div>
+              <div class="inner-footer-col-up-under">
+                <span class="footer-down-txt">Radio</span>
+              </div>
             </div>
+            <div class="col-md-6">
+              <img
+                src="resources/files/system/gif/cote.gif"
+                class="cote1"
+                title="meow :) hello i am Cookie meow"
+              />
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
-<!-- footer -->
-<!-- js -->
-<script src="resources/resource/main/js/bootstrap.min.js"></script>
-<script src="resources/resource/main/js/popper.min.js"></script>
-<script src="resources/resource/main/js/main.js"></script>
-<script src="resources/resource/main/js/radio.js"></script>
-<script src="https://cdn.metroui.org.ua/current/metro.js"></script>
-<!-- js -->
-</body>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- js -->
+    <script src="resources/resource/main/js/bootstrap.min.js"></script>
+    <script src="resources/resource/main/js/popper.min.js"></script>
+    <script src="resources/resource/main/js/main.js"></script>
+    <script src="resources/resource/main/js/radio.js"></script>
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+    <!-- js -->
+  </body>
 </html>
-

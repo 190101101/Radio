@@ -2548,6 +2548,14 @@ input[type='file'] {
     box-shadow: 0px 0px 16px 4px deeppink;
 }
 
+.active:hover{
+    box-shadow: 0px 0px 20px 4px deeppink;
+}
+
+.spinner-status{
+    opacity: 0;    
+}
+
 .card_image_box{
     /*min-width: 340px;*/
     height: 250px;
